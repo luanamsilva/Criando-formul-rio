@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alunos matriculados:</h1>
+
+    <form>
+        <p><label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome"></p>
+        
+
+        <p>   <label for="date">Data da inscriçao:</label>
+        <input type="date" name="date" id="date"> </p>
+  
+
+        <p>        <label for="Email">E-mail:</label>
+        <input type="email" name="Email" id="Email" placeholder="exemplo@exemplo.com"></p>
+
+        <p> <label for="tel">Telefone:</label>
+        <input type="tel" name="tel" id="tel" placeholder="(xx)xxxx-xxxx"></p>
+
+        <p><label for="curso">Curso:</label>
+        <select name="curso" id="curso">
+            <option value="Administração">Administração</option>
+            <option value="Programador">Programador</option>
+            <option value="Direito">Direito</option>
+            <option value="Enfermagem">Enfermagem</option>
+        </select></p>
+        
+      <button onclick="cadastrar()" type="button">Cadastrar</button>
+       </form>
+    <ul id="alunosMatriculados">
+    </ul>
+
+<script src="index.js"></script>
+    
+</body>
+</html>
